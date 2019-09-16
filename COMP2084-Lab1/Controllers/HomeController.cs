@@ -34,6 +34,16 @@ namespace COMP2084_Lab1.Controllers
             return View();
         }
 
+        public IActionResult Addition(int x, int y)
+        {
+            return Ok("Result = " + (x + y).ToString());
+        }
+
+        public IActionResult Multiplication(int x, int y)
+        {
+            return Ok("Result = " + (x * y).ToString());
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
